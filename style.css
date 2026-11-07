@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f1f3f9;
+    color: #222;
+}
+
+/* Navigation */
+header {
+    background: #171536;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #a78bfa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+/* Home */
+.home {
+    min-height: 75vh;
+    background: linear-gradient(135deg, #171536, #30246b);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.home-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.home-content span {
+    color: #a78bfa;
+}
+
+.home-content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #8064e9;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* All sections */
+section:not(.home) {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+section:not(.home) h1 {
+    color: #30246b;
+    margin-bottom: 25px;
+}
+
+/* About */
+.about p {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-list div {
+    background: white;
+    color: #30246b;
+    padding: 25px 40px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+/* Contact */
+.contact {
+    background: #e8e5f7;
+}
+
+.contact p {
+    margin: 15px;
+}
+
+/* Footer */
+footer {
+    background: #171536;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+    .home-content img.profile-img {
+    width: 80px !important;
+    height: 80px !important;
+    max-width: 80px !important;
+    display: block !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    margin: 0 auto 15px !important;
+}
+}
