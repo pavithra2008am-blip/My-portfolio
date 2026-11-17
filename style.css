@@ -244,4 +244,135 @@ footer {
     .about p {
         padding: 22px;
     }
+    .dark-mode {
+    background-color: #222;
+    color: white;
+}
+}
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+}
+body.dark-mode {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+body.dark-mode section,
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a {
+    color: white !important;
+}
+.menu-toggle {
+    display: block;
+    background: purple;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background:#222;
+        padding: 20px;
+        gap: 15px;
+        z-index: 1000;
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+    /* Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+/* Contact Form Styling */
+#contact-form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contact-form label {
+    text-align: left;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #8b5cf6;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+}
+
+#contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact-form button {
+    padding: 12px;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form button:hover {
+    background: #7041d8;
+}
+
+#form-message {
+    min-height: 20px;
 }
